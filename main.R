@@ -18,3 +18,6 @@ ggplotly(short_data_plot) #Make interactive graph for shorten trace
 # Make sure and csv files to store the data
 source("calculations.R") # Calculates peak amplitude and area under curve
 
+# This code overlays 2 graphs together
+source("overlay.R")
+ggplotly(overlay_plot)

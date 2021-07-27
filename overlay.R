@@ -3,9 +3,12 @@
 # Import packages
 library(broom)
 
+plot1_name <- readline(prompt = "Enter name of first csv file to plot: ")
+plot2_name <- readline(prompt = "Enter name of second csv file to plot: ")
+
 # load, explore and process the datasset
-plot1 <- read.csv('data/20-4-21/1254.csv')
-plot2 <- read.csv('data/20-4-21/1508.csv')
+plot1 <- read.csv(paste0("data/20-4-21/", plot1_name, ".csv"))
+plot2 <- read.csv(paste0("data/20-4-21/", plot2_name, ".csv"))
 
 # Making variables to be used for plotting trace
 t <- plot1$Time
@@ -19,10 +22,11 @@ df4 <- tibble(t = t, y = y1, condition = 'Control') %>%
 # define color scheme
 cls <- c("Control"="black", "Drug"="red")
 
-ggplot(data = df4, aes(t, y, colour = condition)) + 
+overlay_plot <- df4%>%
+  ggplot(aes(x=t, y=y , colour = condition)) + 
   geom_line() +
   theme_bw() +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
   labs(x = "Time (s)", y = paste0(nt, " uM")) +
   scale_color_manual(values = cls)
-
+ggplotly(overlay_plot)
