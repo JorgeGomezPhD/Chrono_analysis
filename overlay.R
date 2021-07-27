@@ -23,6 +23,6 @@ ggplot(data = df4, aes(t, y, colour = condition)) +
   geom_line() +
   theme_bw() +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
-  labs(x = "Time (s)", y = "Serotonin  (μM)") +
+  labs(x = "Time (s)", y = paste0(nt, " uM")) +
   scale_color_manual(values = cls)
 

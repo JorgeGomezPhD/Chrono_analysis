@@ -16,6 +16,6 @@ short_data_plot <- df2%>%
   geom_line(data = df2, aes(x=Time, y = Micromolar), color = "black") +
   theme_bw() +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
-  labs(x = "Time (s)", y = "Serotonin  (μM)") +
+  labs(x = "Time (s)", y = paste0(nt, " uM")) +
   scale_x_continuous(breaks = seq(min(df2$Time), max(df2$Time), by = 50))
 ggplotly(short_data_plot)
