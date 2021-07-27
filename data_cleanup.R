@@ -7,7 +7,7 @@ library(filesstrings)
 
 # What is the file name?
 user_input <- toupper(
-  readline(prompt="Enter name: "))
+  readline(prompt="Enter name example '20-4-21.EDT' or '10-25-19.ACQ': "))
 file_loc <- paste0('data/', user_input)
 #print(file_loc)
 
