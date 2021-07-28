@@ -27,5 +27,3 @@ source("calculations.R") # Calculates peak amplitude and area under curve
   source("overlay.R")
   ggplotly(overlay_plot)
 }
-
-#is this working
