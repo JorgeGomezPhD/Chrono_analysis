@@ -19,6 +19,7 @@ source("short_trace.R")
 }
 
 # Run this to calculate the peak amplitude and area under the curve
+
 # Make sure and csv files to store the data
 source("calculations.R") # Calculates peak amplitude and area under curve
 
