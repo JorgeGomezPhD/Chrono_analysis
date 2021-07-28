@@ -2,8 +2,7 @@
 require(Bolstad2)
 
 # select csv file to store the data
-file_name <- readline(prompt = "Enter the name of the file where you want
-                      to store the data: 'ex control'")
+file_name <- readline(prompt = "Enter the name of the file where you want to store the data: 'ex control': ")
 
 # Get Maximum concentration
 max_concentration <- max(df2$Micromolar)
