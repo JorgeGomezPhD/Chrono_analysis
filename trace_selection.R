@@ -5,7 +5,7 @@
 library(plotly)
 
 # Define the neurotransmitter you are working with
-nt <- readline(prompt = "Enter neurotransmitter being alazyed: ")
+nt <- readline(prompt = "Enter neurotransmitter being analyzed: ")
 
 #Creating variable to use in ggplotly
 data_plot <- df%>%
