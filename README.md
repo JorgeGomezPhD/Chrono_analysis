@@ -1,5 +1,8 @@
 # Purpose of script
-This script takes chrono data and prepares it for visualization and analysis.
+This script takes chrono data and prepares it for:
+1. visualization 
+2. analysis
+3. records max amplitude and area under the cure
 
 ## NOTE
 - Before using this script make sure you have the following packages: tidyverse, filesstrings, plotly, Bolstad2, broom.
