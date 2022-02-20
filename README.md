@@ -1,7 +1,8 @@
 # Purpose of script
 This script takes chrono data and prepares it for:
 1. visualization 
-![](Images/single.jpeg)
+Single trace: ![](Images/single.jpeg)
+2 traces overlayed ![](Images/overlay.jpeg)
 2. analysis
 3. records max amplitude and area under the cure
 
