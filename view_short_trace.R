@@ -1,7 +1,7 @@
 # This file allows you to bring up individual traces
 
 # What is the file name?
-trace_name <- readline(prompt="Enter name of trace to visualize: ")
+trace_name <- readline(prompt="Enter name: ")
 file_loc <- paste0(dir_name, "/", trace_name, '.CSV')
 
 #file_loc2 <- 'data/20-4-21/641.csv'
